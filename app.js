@@ -7,7 +7,7 @@
     {
       slug:"lina",
       name:"Lina Dhingra",
-      role:"Producer / Director",
+      role:"Producer / Director / Writer",
       initials:"LD",
       photo:"images/image-b255a464031c34c4.webp",
       bio:[
@@ -20,7 +20,7 @@
     {
       slug:"richard",
       name:"Richard Schenkman",
-      role:"Producer / Director",
+      role:"Producer / Writer",
       initials:"RS",
       photo:"images/image-53cd45205aa16837.webp",
       bio:[
@@ -33,7 +33,7 @@
     {
       slug:"robert",
       name:"Robert Maylor",
-      role:"Producer, Lawyer",
+      role:"Producer / Legal Affairs",
       initials:"RM",
       photo:"images/image-eabc0d0a7472fc8d.webp",
       bio:[
@@ -64,16 +64,16 @@
     {
       slug:"supermonk", workingTitle:true, title:"SuperMONK", type:"Documentary Feature Film", status:"In Production", founder:"lina",
       format:"Documentary Feature Film | 90 minutes",
-      featured:true, tone:1, heroImage:"images/image-ffebfc68de74133a.webp", poster:"images/image-5646723a9301c7c4.webp",
+      featured:true, tone:1, heroImage:"images/image-ffebfc68de74133a.webp", poster:"images/supermonk-poster.jpeg",
       stills:["images/image-d2ca7afd901b024d.webp","images/image-f436c4b69c5cbaa8.webp","images/image-3bedf6ab097c6c9a.webp",IMG_THIKSEY],
       stillsPosition:["center 15%","center 20%","center","center"],
       team:[
-        {ref:"lina", role:"Director & Producer"},
-        {ref:"richard", role:"Writer & Producer"},
+        {ref:"lina", role:"Producer / Director / Writer"},
+        {ref:"richard", role:"Producer / Writer"},
         {ref:"leah", role:"Producer"},
         {ref:"roger", role:"Cinematographer"},
-        {ref:"giuseppe", role:"Fundraising"},
-        {ref:"rashi", role:"Stylist / Creative Consultant"},
+        {ref:"giuseppe", role:"Strategic Partnerships & Philanthrophy"},
+        {ref:"rashi", role:"Creative Director Brands & Collab"},
         {ref:"smriti", role:"Digital Marketing Specialist"},
         {ref:"shweta", role:"Creative & Brand Consultant"}
       ],
@@ -100,7 +100,7 @@
     },
     {
       slug:"ponzi", title:"Ponzi", type:"Financial Thriller", status:"In Development", founder:"lina",
-      featured:true, tone:6, heroImage:"images/image-e0e2b2ed3ea906c6.webp", poster:"images/image-f8497a77a1b0b3fd.webp",
+      featured:true, tone:6, heroImage:"images/image-e0e2b2ed3ea906c6.webp", poster:"images/ponzi-poster.jpeg",
       team:[],
       synopsis:"After losing her savings to an elaborate investment scam, a young woman sets out to expose the people who deceived her\u2014only to discover that her story is part of a vast, global Ponzi economy that has claimed countless victims, from ordinary investors to the victims of pandemic-era crypto schemes.",
       credits:[{role:"A Film By", name:"karmaLINA Films"}],
@@ -108,7 +108,7 @@
     },
     {
       slug:"conviction", title:"Conviction", type:"Crime Drama", status:"In Development", founder:"lina",
-      featured:true, tone:3, heroImage:"images/image-0f7c878042c1fb36.webp", poster:"images/image-8a442754318a57a5.webp",
+      featured:true, tone:3, heroImage:"images/image-0f7c878042c1fb36.webp", poster:"images/conviction-poster.jpeg",
       team:[],
       synopsis:"After her father kills her mother, a young woman faces an incomprehensible choice: abandon the man responsible for the worst tragedy of her life, or fight to save him from a justice system she believes has failed them both.",
       credits:[{role:"A Film By", name:"karmaLINA Films"}],
@@ -177,7 +177,7 @@
       '<div class="poster"><div class="tint '+toneClass(p.tone)+'"'+artStyle(p.poster, p.posterPosition)+'></div>'+mark+
       '<div class="frame-info"><span class="p-type">'+p.type+'</span><div class="p-title">'+p.title+'</div></div></div>'+
       '<div class="card-caption"><span class="t">'+p.title+'</span><span class="g">'+p.status+'</span></div>'+
-      (p.workingTitle ? '<span class="card-note">Working Titles</span>' : "");
+      (p.workingTitle ? '<span class="card-note">Working Title</span>' : "");
     return a;
   }
 
