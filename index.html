@@ -477,6 +477,16 @@
   .contact-card .big{font-family:var(--f-display); font-size:1.7rem; font-weight:560; text-decoration:none; display:inline-block; margin-top:4px;}
   .contact-card .big:hover{color:var(--gold);}
   .contact-note{margin-top:16px; font-size:.88rem; color:var(--ink-dim);}
+
+  /* ---- Verticals & Micro Dramas ---- */
+  .verticals-hero{padding-block:clamp(70px,11vw,120px);}
+  .verticals-hero h1{font-size:clamp(2.3rem,5vw,4rem); max-width:15ch;}
+  .verticals-lede{margin-top:22px; color:var(--ink-dim); max-width:58ch;}
+  .verticals-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,380px)); gap:clamp(20px,3vw,36px); margin-top:clamp(40px,6vw,64px);}
+  .vertical-card{border:1px solid var(--line); background:var(--ground-raised);}
+  .vertical-card video{display:block; width:100%; aspect-ratio:9 / 16; background:#000; object-fit:cover;}
+  .vertical-card-caption{padding:18px 20px 20px;}
+  .vertical-card-caption h2{font-size:clamp(1.35rem,2.2vw,1.75rem);}
 </style>
 </head>
 <body>
@@ -514,6 +524,7 @@
     <nav class="primary" id="primaryNav">
       <a href="#/about" data-route="about">About</a>
       <a href="#/projects" data-route="projects">Projects</a>
+      <a href="#/verticals" data-route="verticals">Verticals &amp; Micro Dramas</a>
       <a href="#/awards" data-route="awards">Awards</a>
       <a href="#/contact" data-route="contact">Contact Us</a>
     </nav>
@@ -711,6 +722,23 @@
   </div>
 
   <!-- ============================= CONTACT ============================= -->
+  <div class="view" data-view="verticals">
+    <section class="verticals-hero">
+      <div class="wrap">
+        <span class="eyebrow">Watch</span>
+        <h1>Verticals &amp; Micro Dramas</h1>
+        <p class="verticals-lede">Short-form stories made for the way audiences watch now.</p>
+        <div class="verticals-grid">
+          <article class="vertical-card">
+            <video controls playsinline preload="metadata" poster="images/jini-needs-a-job-poster.jpg" aria-label="Jini needs a job"><source src="media/jini-needs-a-job.mp4" type="video/mp4">Your browser does not support embedded video.</video>
+            <div class="vertical-card-caption"><h2>Jini needs a job</h2></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============================= CONTACT ============================= -->
   <div class="view" data-view="contact">
     <section class="contact-hero">
       <div class="wrap">
@@ -747,6 +775,7 @@
       <nav class="foot-links">
         <a href="#/about">About</a>
         <a href="#/projects">Projects</a>
+        <a href="#/verticals">Verticals &amp; Micro Dramas</a>
         <a href="#/awards">Awards</a>
         <a href="#/contact">Contact</a>
       </nav>

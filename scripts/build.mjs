@@ -7,7 +7,7 @@ new Function(js);
 for (const match of (html + js).matchAll(/images\/[a-zA-Z0-9.-]+/g)) {
   if (!(await stat(match[0])).size) throw new Error(`Empty image: ${match[0]}`);
 }
-for (const path of ['media/banner-3.mp4', 'media/banner-3-poster.jpg', ...[...css.matchAll(/url\(([^)]+)\)/g)].map(match => `fonts/${match[1]}`)]) {
+for (const path of ['media/banner-3.mp4', 'media/banner-3-poster.jpg', 'media/jini-needs-a-job.mp4', ...[...css.matchAll(/url\(([^)]+)\)/g)].map(match => `fonts/${match[1]}`)]) {
   if (!(await stat(path)).size) throw new Error(`Empty asset: ${path}`);
 }
 for (const match of html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)) {
