@@ -339,7 +339,16 @@
   .contact-block{font-family:var(--f-mono); font-size:.86rem; line-height:2; color:var(--ink-dim);}
   .contact-block a{text-decoration:none; color:var(--ink);}
   .contact-block a:hover{color:var(--gold);}
-  .foot-links{display:flex; gap:26px; font-family:var(--f-mono); font-size:.74rem; letter-spacing:.08em; text-transform:uppercase;}
+  .footer-secondary{display:flex; flex-direction:column; align-items:flex-end; gap:28px; margin-left:auto; max-width:100%;}
+  .foot-links{display:flex; flex-wrap:wrap; justify-content:flex-end; gap:16px 26px; font-family:var(--f-mono); font-size:.74rem; letter-spacing:.08em; text-transform:uppercase;}
+  .sister-company{display:flex; flex-direction:column; align-items:flex-end; gap:10px; font-family:var(--f-mono); font-size:.74rem; color:var(--ink-dim);}
+  .sister-company a{display:block;}
+  .sister-company img{width:165px; height:auto;}
+  @media (max-width:920px){
+    .footer-secondary{width:100%; margin-left:0; align-items:flex-start;}
+    .foot-links{justify-content:flex-start;}
+    .sister-company{align-items:flex-start;}
+  }
   .foot-links a{text-decoration:none; color:var(--ink-dim);}
   .foot-links a:hover{color:var(--gold);}
   .foot-bottom{margin-top:46px; padding-top:22px; border-top:1px solid var(--line); display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; font-family:var(--f-mono); font-size:.68rem; color:var(--ink-dim); letter-spacing:.04em;}
@@ -771,10 +780,8 @@
           <a href="mailto:info@karmalinafilms.com">info@karmalinafilms.com</a><br>
           <a href="tel:+14167925462">+1 (416) 792-5462</a>
         </p>
-        <p class="contact-block" style="margin-top:18px;">
-          Sister company: <a href="https://karmapro.ca/" target="_blank" rel="noopener noreferrer">Karma Pro ↗</a>
-        </p>
       </div>
+      <div class="footer-secondary">
       <nav class="foot-links">
         <a href="#/about">About</a>
         <a href="#/projects">Projects</a>
@@ -782,6 +789,14 @@
         <a href="#/awards">Awards</a>
         <a href="#/contact">Contact</a>
       </nav>
+        <div class="sister-company">
+          <span>Sister company</span>
+          <a href="https://karmapro.ca/" target="_blank" rel="noopener noreferrer" aria-label="Karma Pro — sister company (opens in a new tab)">
+            <img class="wordmark-light-logo" src="images/karmapro-logo.png" alt="Karma Pro" width="275" height="89" loading="lazy" decoding="async">
+            <img class="wordmark-dark-logo" src="images/karmapro-logo-light.png" alt="Karma Pro" width="275" height="89" loading="lazy" decoding="async">
+          </a>
+        </div>
+      </div>
     </div>
     <div class="foot-bottom">
       <span>© 2026 karmaLINA Films. Narrative &amp; documentary production.</span>
